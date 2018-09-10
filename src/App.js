@@ -50,27 +50,26 @@ togglePersonsHandler = () => {
   });
 }
 
+
+
 render() {
 
  const style = {
-  backgroundColor: 'white', 
+  backgroundColor: 'white',
   font: 'inherit',
-  border: '1px solid blue', 
+  border: '1px solid blue',
+  borderRadius: '5px', 
   padding: '8px', 
   cursor: 'pointer',
   color: 'red'
  };
 
-return (
-      <div className="App">
-      <h1>Hi,I am React App </h1>
-      <p>This is really working !</p>
-      <button 
-      style = {style}
-      onClick = {this.togglePersonsHandler}> Switch Name </button> 
-      
-      {this.state.showPersons === true ?
-          <div>
+ let persons = null; 
+
+ if (this.state.showPersons){
+
+  persons = (
+     <div>
            <Person 
            name = {this.state.persons[0].name} 
            age = {this.state.persons[0].age}
@@ -85,8 +84,21 @@ return (
           <Person 
            name = "Stephanie" 
            age = "26" />
-          </div> : null
-      }
+    </div> 
+    );
+
+ }
+
+return (
+      <div className="App">
+      <h1>Hi,I am React App </h1>
+      <p>This is really working !</p>
+      <button 
+      style = {style}
+      onClick = {this.togglePersonsHandler}> Switch Name </button> 
+      {persons}
+     
+             
       
      </div>
    );
