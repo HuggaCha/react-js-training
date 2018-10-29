@@ -105,16 +105,15 @@ render () {
 
 return (
   <StyleRoot>
-      <div className="App">
+    <div className="App">
       <h1>Hi,I am React App </h1>
       <p className={classes.join(' ')}>This is really working !</p>
       <button 
       style = {style}
       onClick = {this.togglePersonsHandler}> Switch Name </button> 
       {persons}
-      
      </div>
-    </StyleRoot>
+   </StyleRoot>
    );
  //return React.createElement('div', {className: 'App' }, React.createElement('h1', null,  'Does this work now?'));
   
