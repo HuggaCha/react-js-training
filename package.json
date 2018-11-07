@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "browserify": "^16.2.3",
+    "emmet": "^1.6.3",
+    "oidc-client": "^1.5.4",
     "radium": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

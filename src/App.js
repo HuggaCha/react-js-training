@@ -1,24 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import Message from './Message/Message';
-import Radium, {StyleRoot} from 'radium'
+import Radium, {StyleRoot} from 'radium';
+import Login from './Login/Login';
 
 class App extends Component {
   
 
   state = {
     persons : [
-      {id:'asfa1', name: 'Max', age: 28},
-      {id:'vasdf1', name: 'Manu', age: 29}, 
-      {id:'asdf11', name: 'Stephanie', age: 26}
+    
     ], 
 
     otherState : 'some other value', 
 
     showPersons: false
   }
-
-
 
 render () {
 
@@ -28,22 +25,19 @@ render () {
   border: '1px solid blue',
   padding: '8px', 
   cursor: 'pointer',
-  color: 'white',
+  color: 'yellow',
   ':hover': {
     backgroundColor: 'lightgreen',
     color: 'black'
   }
  };
 
- 
-
-
-return (
+ return (
   <StyleRoot>
     <div className="App">
-      <h1>React App </h1>
-      <Message style={style} />
-
+      <h2 style={style}>React App Prototype </h2>
+      <p>Please enter your username and password below:</p>
+      <Login />
      </div>
    </StyleRoot>
    );
