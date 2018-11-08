@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "browserify": "^16.2.3",
     "emmet": "^1.6.3",
+    "material-ui": "^0.20.2",
     "oidc-client": "^1.5.4",
     "radium": "^0.25.0",
     "react": "^16.2.0",
