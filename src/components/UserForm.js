@@ -1,5 +1,5 @@
 import	React, { Component } from 'react'; 
-import FormUserDetails from './FormUserDetails'
+import FormUserDetails from './FormUserDetails';
 
 export class UserForm extends Component {
 	state = {
@@ -54,8 +54,8 @@ render(){
 			    return <h1>Success</h1> 
 	    	}
     	}
-	}
- }
+	
+ 
 	
 }
-export default UserForm
+export default UserForm;
